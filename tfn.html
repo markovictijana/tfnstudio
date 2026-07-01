@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TFN Studio</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Poppins",Arial,sans-serif;
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+
+body{
+
+background:#050505;
+color:white;
+
+}
+
+
+
+/* HEADER */
+
+header{
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+z-index:100;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:25px 8%;
+
+background:rgba(0,0,0,.85);
+
+backdrop-filter:blur(10px);
+
+border-bottom:3px solid #d4af37;
+
+
+}
+
+
+
+.logo{
+
+font-size:40px;
+
+font-weight:900;
+
+letter-spacing:5px;
+
+color:#d4af37;
+
+}
+
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin:20px;
+
+font-size:18px;
+
+}
+
+
+nav a:hover{
+
+color:#d4af37;
+
+}
+
+
+
+
+
+/* HERO */
+
+.hero{
+
+
+height:100vh;
+
+overflow:hidden;
+
+
+}
+
+
+.slider{
+
+
+display:flex;
+
+width:300%;
+
+
+animation:slide 15s infinite;
+
+
+}
+
+
+
+.slider img{
+
+
+width:33.333%;
+
+height:100vh;
+
+object-fit:cover;
+
+filter:brightness(.45);
+
+
+}
+
+
+
+
+@keyframes slide{
+
+
+0%,30%{
+
+transform:translateX(0);
+
+}
+
+
+35%,65%{
+
+transform:translateX(-33.33%);
+
+}
+
+
+70%,100%{
+
+transform:translateX(-66.66%);
+
+}
+
+
+}
+
+
+
+
+
+.hero-text{
+
+
+position:absolute;
+
+top:40%;
+
+left:10%;
+
+
+}
+
+
+
+.hero-text h1{
+
+font-size:70px;
+
+color:#d4af37;
+
+}
+
+
+
+.hero-text p{
+
+font-size:25px;
+
+}
+
+
+
+
+
+/* USLUGE */
+
+
+
+section{
+
+padding:90px 8%;
+
+}
+
+
+
+.title{
+
+text-align:center;
+
+font-size:45px;
+
+color:#d4af37;
+
+margin-bottom:50px;
+
+}
+
+
+
+
+
+.cards{
+
+
+display:flex;
+
+justify-content:center;
+
+gap:35px;
+
+flex-wrap:wrap;
+
+
+}
+
+
+
+
+.card{
+
+
+width:350px;
+
+background:#111;
+
+border:5px solid #d4af37;
+
+border-radius:25px;
+
+overflow:hidden;
+
+
+box-shadow:0 0 30px #d4af3750;
+
+transition:.4s;
+
+
+}
+
+
+
+.card:hover{
+
+
+transform:translateY(-15px);
+
+
+box-shadow:0 0 50px #d4af37;
+
+
+}
+
+
+
+.card img{
+
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+
+}
+
+
+
+.card h2{
+
+
+text-align:center;
+
+margin:20px;
+
+color:#d4af37;
+
+
+}
+
+
+
+.card p{
+
+
+padding:20px;
+
+text-align:center;
+
+font-size:18px;
+
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+.btn{
+
+
+display:block;
+
+margin:50px auto;
+
+padding:18px 50px;
+
+
+background:#d4af37;
+
+color:black;
+
+font-weight:bold;
+
+font-size:20px;
+
+
+border-radius:40px;
+
+border:none;
+
+
+cursor:pointer;
+
+
+}
+
+
+
+.btn:hover{
+
+transform:scale(1.1);
+
+}
+
+
+
+
+
+/* KONTAKT */
+
+
+#contact{
+
+
+display:none;
+
+background:#000;
+
+border:5px solid #d4af37;
+
+border-radius:25px;
+
+text-align:center;
+
+}
+
+
+
+#contact h2{
+
+color:#d4af37;
+
+font-size:40px;
+
+}
+
+
+
+#contact p{
+
+
+font-size:24px;
+
+margin:15px;
+
+
+}
+
+
+
+
+
+footer{
+
+text-align:center;
+
+padding:30px;
+
+border-top:3px solid #d4af37;
+
+}
+
+
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<header>
+
+
+<div class="logo">
+
+TFN
+
+</div>
+
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#services">Usluge</a>
+
+<a href="#contact">Kontakt</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+<div class="hero">
+
+
+<div class="slider">
+
+
+<img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28">
+
+
+<img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc">
+
+
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033">
+
+
+</div>
+
+
+
+<div class="hero-text">
+
+<h1>TFN STUDIO</h1>
+
+<p>Tattoo • Nails • Fade</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<section id="services">
+
+
+<div class="title">
+
+NAŠE USLUGE
+
+</div>
+
+
+
+
+<div class="cards">
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28">
+
+
+<h2>TATTOO</h2>
+
+
+<p>
+Profesionalne tetovaže i originalni dizajn.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc">
+
+
+<h2>NAILS</h2>
+
+
+<p>
+Luksuzni nokti, gel tehnike i nail art.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a">
+
+
+<h2>FADE</h2>
+
+
+<p>
+Moderni muški fade, šišanje i brada.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+<button class="btn" onclick="openContact()">
+
+ZAKAŽI TERMIN
+
+</button>
+
+
+
+<div id="contact">
+
+
+<h2>Kontakt</h2>
+
+
+<p>📞 0652568937</p>
+
+<p>Instagram: @tfnstudio.rs</p>
+
+<p>Vidimo se u TFN Studio</p>
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+<footer>
+
+
+TFN Studio © 2026
+
+
+</footer>
+
+
+
+
+<script>
+
+
+function openContact(){
+
+document.getElementById("contact").style.display="block";
+
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>
